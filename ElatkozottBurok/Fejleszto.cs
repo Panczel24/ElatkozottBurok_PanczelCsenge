@@ -31,6 +31,18 @@ namespace ElatkozottBurok
             StresszSzint = stresszSzint;
         }
 
+
+
+        public Fejleszto(string nev, Munkakor munkakor, int penz, string kedvencSnack)
+        {
+            this.Nev = nev;
+            this.Munkakor = munkakor;
+            this.Penz = penz;
+            this.KedvencSnack = kedvencSnack;
+            this.Koffeinszint = 0;
+            this.StresszSzint = 0;
+        }
+
         public string Nev
         {
             get => nev;
@@ -136,8 +148,7 @@ namespace ElatkozottBurok
             }
 
             int stresszCsokkenes = nassolnivalo.StresszOldas;
-            //2x a kedvenc snack
-            //extra(+5)
+            
             if (nassolnivalo.Nev == KedvencSnack)
             {
                 stresszCsokkenes *= 2;
@@ -150,7 +161,6 @@ namespace ElatkozottBurok
             StresszSzint -= stresszCsokkenes;
         }
 
-        //nincs tesztelve de igy kell megcsinalni a dolgozik metodust 
         public void Dolgozik()
         {
             if (Kiegve == true)

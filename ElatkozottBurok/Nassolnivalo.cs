@@ -60,7 +60,8 @@ namespace ElatkozottBurok
                 {
                                         koffeinLoket = value;
 
-                }                            }
+                }                            
+            }
 
         }
 
