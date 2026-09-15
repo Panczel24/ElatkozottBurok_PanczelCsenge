@@ -1,5 +1,7 @@
 using ElatkozottBurok;
+using NUnit.Framework;
 namespace ElatkozottBurok.Tesztek
+
 {
     [TestFixture]
     public class IrodaTesztek
@@ -18,7 +20,6 @@ namespace ElatkozottBurok.Tesztek
             Assert.That(snack.StresszOldas, Is.EqualTo(0));
             Assert.That(snack.Ar, Is.EqualTo(100));
         }
-        /*
 
         [Test]
         public void Fejleszto_KoffeinEsStresszHatarteruletek_EsKiegveAllapot()
@@ -73,6 +74,7 @@ namespace ElatkozottBurok.Tesztek
             Assert.That(kapott, Is.Null);
             Assert.That(dev.Penz, Is.EqualTo(100));
         }
+        /*
         */
     }
 }
